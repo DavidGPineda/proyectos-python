@@ -23,12 +23,28 @@
 print("=== Conversor de Temperaturas ===")
 
 
-def celcius_a_fahrenheit(c):
-    return (c * 9/5) + 32
+def celcius_a_fahrenheit(celsius):
+    """
+    Convierte grados Celsius a Fahrenheit.
+
+    Parámetros:
+        c (float): temperatura en grados Celsius.
+
+    Retorna:
+        float: temperatura equivalente en Fahrenheit.
+    """
+    return (celsius * 9/5) + 32
 
 
-def fahrenheit_a_kelvin(f):
-    return (f - 32) * 5/9 + 273.15
+def fahrenheit_a_kelvin(fahrenheit):
+    """
+    Convierte grados Fahrenheit a Kelvin.
+    Parámetros:
+        f (float): temperatra en grados Fahrenheit.
+    Retorna:
+        float: Temperatura equivalente a Kelvin.
+    """
+    return (fahrenheit - 32) * 5/9 + 273.15
 
 
 while True:
